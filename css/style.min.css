@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,GRAD@8..144,150,100..1000,150&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -90,12 +91,6 @@ h6 {
 }
 
 /*--------------------*/
-@font-face {
-  font-family: RobotoFlex;
-  font-display: swap;
-  src: url("../fonts/RobotoFlex-Regular.woff2") format("woff2"), url("../fonts/RobotoFlex-Regular.woff") format("woff");
-  font-style: normal;
-}
 .btn {
   display: flex;
   align-items: center;
@@ -774,6 +769,7 @@ textarea.error {
   color: #002;
   text-align: center;
   margin-bottom: 15px;
+  font-variation-settings: "slnt" 0, "GRAD" 150, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
 }
 .intro h1 span {
   display: block;
@@ -1769,7 +1765,9 @@ textarea.error {
 }
 
 body {
-  font-family: RobotoFlex;
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   color: #1e1e1f;
   margin: 0;
   line-height: 1.2;
